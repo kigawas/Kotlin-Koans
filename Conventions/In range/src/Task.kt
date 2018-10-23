@@ -1,5 +1,5 @@
 class DateRange(val start: MyDate, val endInclusive: MyDate) {
-    operator fun contains(d: MyDate) : Boolean{
+    operator fun contains(d: MyDate): Boolean {
         return d > start && d < endInclusive
     }
 }

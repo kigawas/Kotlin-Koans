@@ -3,10 +3,10 @@ import org.junit.Assert
 
 class TestNullableTypes {
     fun testSendMessageToClient(
-            client: Client?,
-            message: String?,
-            expectedEmail: String? = null,
-            shouldBeInvoked: Boolean = false
+        client: Client?,
+        message: String?,
+        expectedEmail: String? = null,
+        shouldBeInvoked: Boolean = false
     ) {
         var invoked = false
         val expectedMessage = message

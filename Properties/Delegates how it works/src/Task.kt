@@ -17,4 +17,3 @@ class EffectiveDate<R> : ReadWriteProperty<R, MyDate> {
         timeInMillis = value.toMillis()
     }
 }
-

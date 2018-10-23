@@ -1,6 +1,5 @@
 import org.junit.Assert
 import org.junit.Test
-import java.util.HashMap
 
 class TestDelegatesExamples {
     @Test fun testLazy() {
@@ -14,7 +13,7 @@ class TestDelegatesExamples {
 
     @Test fun initializedOnce() {
         var initialized = 0
-        val lazyProperty = LazyProperty( { initialized++; 42 })
+        val lazyProperty = LazyProperty({ initialized++; 42 })
         lazyProperty.lazyValue
         lazyProperty.lazyValue
         Assert.assertEquals("Lazy property should be initialized once", 1, initialized)

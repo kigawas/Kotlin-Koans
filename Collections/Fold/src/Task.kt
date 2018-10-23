@@ -5,6 +5,4 @@ fun Shop.getSetOfProductsOrderedByEveryCustomer(): Set<Product> {
         orderedByAll, customer ->
         orderedByAll.intersect(customer.orders.flatMap { it.products }.toSet())
     }
-
-
 }

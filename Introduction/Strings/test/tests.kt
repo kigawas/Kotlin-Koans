@@ -1,6 +1,5 @@
 import org.junit.Test
 import org.junit.Assert
-import java.util.regex.Pattern
 
 class TestStringTemplates() {
     private fun testMatch(date: String) = Assert.assertTrue("The pattern should match $date", date.matches(getPattern().toRegex()))
@@ -16,4 +15,4 @@ class TestStringTemplates() {
 
     @Test fun doNotMatch() {
         testMismatch("24 RRR 1957")
-    }}
+    } }

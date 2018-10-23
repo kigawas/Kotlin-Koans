@@ -13,10 +13,9 @@ class TetLazyProperty {
 
     @Test fun initializedOnce() {
         var initialized = 0
-        val lazyProperty = LazyProperty( { initialized++; 42 })
+        val lazyProperty = LazyProperty({ initialized++; 42 })
         lazyProperty.lazy
         lazyProperty.lazy
         Assert.assertEquals("Lazy property should be initialized once", 1, initialized)
-
     }
 }

@@ -1,4 +1,4 @@
-//products
+// products
 val idea = Product("IntelliJ IDEA Ultimate", 199.0)
 val reSharper = Product("ReSharper", 149.0)
 val dotTrace = Product("DotTrace", 159.0)
@@ -12,7 +12,7 @@ val webStorm = Product("WebStorm", 49.0)
 val teamCity = Product("TeamCity", 299.0)
 val youTrack = Product("YouTrack", 500.0)
 
-//customers
+// customers
 val lucas = "Lucas"
 val cooper = "Cooper"
 val nathan = "Nathan"
@@ -20,7 +20,7 @@ val reka = "Reka"
 val bajram = "Bajram"
 val asuka = "Asuka"
 
-//cities
+// cities
 val Canberra = City("Canberra")
 val Vancouver = City("Vancouver")
 val Budapest = City("Budapest")

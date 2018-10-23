@@ -1,9 +1,9 @@
 class LazyProperty(val initializer: () -> Int) {
 
-    var v :Int? = null
+    var v: Int? = null
     val lazy: Int
         get() {
-            if (v == null){
+            if (v == null) {
                 v = initializer()
             }
             return v!!

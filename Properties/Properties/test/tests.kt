@@ -12,5 +12,4 @@ class TestProperties {
         // Here we have to use !! due to false smart cast impossible
         Assert.assertTrue("The property 'propertyWithCounter' should be set", 32 == q.propertyWithCounter!!)
     }
-
 }

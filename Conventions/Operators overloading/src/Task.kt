@@ -8,7 +8,7 @@ operator fun MyDate.plus(timeInterval: TimeInterval): MyDate = addTimeIntervals(
 
 data class RepeatedTimeInterval(val timeInterval: TimeInterval, val num: Int)
 
-operator  fun MyDate.plus(repeatedTimeInterval: RepeatedTimeInterval): MyDate = addTimeIntervals(repeatedTimeInterval.timeInterval, repeatedTimeInterval.num)
+operator fun MyDate.plus(repeatedTimeInterval: RepeatedTimeInterval): MyDate = addTimeIntervals(repeatedTimeInterval.timeInterval, repeatedTimeInterval.num)
 
 operator fun TimeInterval.times(i: Int) = RepeatedTimeInterval(this, i)
 

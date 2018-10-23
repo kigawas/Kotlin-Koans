@@ -9,7 +9,7 @@ fun Customer.getMostExpensiveDeliveredProduct(): Product? {
 // Note: a customer may order the same product for several times.
 fun Shop.getNumberOfTimesProductWasOrdered(product: Product): Int {
     val allOrdered = customers.flatMap { it.orders.flatMap { it.products } }
-    return allOrdered.count {it.name == product.name}
+    return allOrdered.count { it.name == product.name }
 }
 
 /* TODO */
